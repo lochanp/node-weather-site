@@ -28,15 +28,15 @@ app.get('',(req,res) => {
 })
 app.get('/about',(req,res) => {
     res.render('about',{
-        title : 'this is about',
+        title : 'About',
         name : ' Lochan Potdar',
-        who : ' me ofc'
+
     })
 })
 app.get('/jelp',(req,res) => {
     res.render('jelp',{
         title : 'this is help',
-        help : 'what help do you need',
+        help : 'some helpful text',
         name : ' Lochan potdar'
     })
 })
