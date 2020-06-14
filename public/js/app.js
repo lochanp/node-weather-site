@@ -1,5 +1,3 @@
-console.log('is this workin');
-
 const weatherSearch = document.querySelector('button');
 const search = document.querySelector('input');
 const msg1 = document.querySelector('#message-1');
