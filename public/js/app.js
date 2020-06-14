@@ -9,7 +9,7 @@ weatherSearch.addEventListener('click', (e) => {
     const location = search.value;
     msg1.textContent = 'loading..';
     msg2.textContent = '';
-        fetch('http://localhost:3000/weather?address='+ location ).then((Response) => {
+        fetch('/weather?address='+ location ).then((Response) => {
             Response.json().then((data) =>{
                 if(data.error) {
                     msg1.textContent = 'unable to find the location.Try another address';
