@@ -35,7 +35,7 @@ app.get('/about',(req,res) => {
 })
 app.get('/jelp',(req,res) => {
     res.render('jelp',{
-        title : 'this is help',
+        title : 'Help',
         help : 'some helpful text',
         name : ' Lochan potdar'
     })
