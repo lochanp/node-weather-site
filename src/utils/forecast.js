@@ -11,7 +11,8 @@ const forecast = (latitude, longitude, callback) => {
             callback('unable to find the tempreture',undefined)
         }
         else {
-            callback(undefined,'The weather is '+ body.current.weather_descriptions + '. It is currently '+ body.current.temperature  + ' degree. It feels like ' +body.current.feelslike +' degrees out. with '+ body.current.precip +'% chance of rain. The humidity is '+body.current.humidity +'%.')
+            const rainPrecip = body.current.precip;
+            callback(undefined,'The weather is '+ body.current.weather_descriptions[0] + '. It is currently '+ body.current.temperature  + ' degree. It feels like ' +body.current.feelslike +'. The humidity is '+body.current.humidity +'%.')
             }   
     })
 } 
