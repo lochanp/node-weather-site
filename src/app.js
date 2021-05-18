@@ -22,21 +22,21 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('',(req,res) => {
     res.render('index',{
-        name :' Lochan Potdar',
+        name :' Deveshree Rotkar',
         title: 'Weather'
     })  
 })
 app.get('/about',(req,res) => {
     res.render('about',{
         title : 'About',
-        name : ' Lochan Potdar',
+        name : ' Deveshree Rotkar',
 
     })
 })
 app.get('/jelp',(req,res) => {
     res.render('jelp',{
         title : 'Help',
-        name : ' Lochan potdar'
+        name : ' Deveshree Rotkar'
     })
 })
 app.get('/weather',(req,res) => {
@@ -75,7 +75,7 @@ app.get('/products',(req,res) => {
 app.get('/jelp/*',(req,res) => {
     res.render('error',{
         title: '404 help',
-        name : ' Lochan Potdar',
+        name : ' Deveshree Rotkar',
         errorMessage: 'Help article not found'
     })
 })
@@ -83,7 +83,7 @@ app.get('/jelp/*',(req,res) => {
 app.get('*',(req,res) => {
     res.render('error',{
         title : '404',
-        name: ' Lochan Potdar',
+        name: ' Deveshree Rotkar',
         errorMessage : 'page not found'
     })
 })
